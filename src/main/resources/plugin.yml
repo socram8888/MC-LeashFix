@@ -1,0 +1,5 @@
+name: LeashFix
+version: 1.0
+main: pet.orca.bukkit.leashfix.LeashFix
+api-version: '26.1'
+description: Fixes rogue home positions on unleashed entities that prevent proper AI functionality.
