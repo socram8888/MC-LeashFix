@@ -36,3 +36,13 @@ jobs:
       with:
         name: leashfix
         path: target/*.jar
+
+    - name: Release
+      uses: softprops/action-gh-release@v3
+      if: github.ref_type == 'tag'
+      permissions:
+        contents: write
+      with:
+        files: target/*.jar
+        fail_on_unmatched_files: true
+        draft: true
